@@ -7,7 +7,8 @@
 
 /* BLOCCO LEZIONI */
 #lezioni .row>.left,
-#lezioni .row>.right {
+#lezioni .row>.right 
+{
   width: 50%;
   float: left;
 }
@@ -26,7 +27,8 @@
 /* BLOCCO STEPS */
 #steps .row>.left,
 #steps .row>.central,
-#steps .row>.right {
+#steps .row>.right 
+{
   float: left;
   width: 33%;
 }
@@ -70,4 +72,72 @@ img {
 
 .clear {
   clear: both;
+}
+
+@media screen and (max-width: 767px)
+{
+  .row
+  {
+    width: 100%;
+    margin-top: 0;
+  }
+  #lezioni .row>.left,
+  #lezioni .row>.right 
+  {
+    width: 100%;
+  }
+  .container, #why
+  {
+    background-color: #f2f2cd;
+  }
+
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right 
+  {
+    float: left;
+    width: 100%;
+  }
+ 
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px)
+{
+  .row
+  {
+    width: 100%;
+    margin-top: 0;
+  }
+  .container
+  {
+      background-color: #75d351;
+      margin: 0 auto;
+  }
+  #steps .row>.left,
+  #steps .row>.central
+  {
+    width: 50%;
+  }
+  #steps .row>.right 
+  {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (min-width: 992px)
+{
+  .row
+  {
+    width: 100%;
+  }
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right 
+  {
+    float: left;
+    width: 33%;
+  }
 }

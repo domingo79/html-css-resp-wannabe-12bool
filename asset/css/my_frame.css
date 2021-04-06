@@ -16,6 +16,10 @@
     width: 1170px;
     margin: 0 auto;
 }
+.container_xl
+{
+    width: 100%;
+}
 
 .row
 {
